@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshKargo | Perishable Goods Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="FreshKargo Logo">
+            <span>FreshKargo</span>
+        </div>
+        <div class="header-right">
+            <nav>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#how-it-works" data-i18n="nav_how">How it Works</a></li>
+                <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+                <li><a href="#team" data-i18n="nav_team">Team</a></li>
+                <li><a href="#benefits" data-i18n="nav_benefits">Benefits</a></li>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-primary" data-i18n="btn_signup">Sign Up</button>
+                <div class="lang-toggle" onclick="toggleLanguage()">
+                    <span id="lang-text" class="active">En</span> | <span id="lang-alt">Es</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="background-image" style="background-image: url('img/hero-bg.jpg');"></div>
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">System for inventory management and distribution of perishable goods</h1>
+            <h3 data-i18n="hero_subtitle">Monitor temperature, manage stock, reduce losses and improve your logistics operations from a single place.</h3>
+            <button class="btn-primary btn-large" data-i18n="btn_demo">Book a Demo</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="title" data-i18n="srv_title">Services</h2>
+        <p class="subtitle" data-i18n="srv_subtitle">Integrated tools to control every stage of your perishable goods operation.</p>
+        
+        <div class="grid services-grid">
+            <div class="card light">
+                <div class="icon">🌡️</div>
+                <h4 data-i18n="srv1_title">Temperature Control</h4>
+                <p data-i18n="srv1_desc">Continuous monitoring and automatic alerts to keep the cold chain intact at all times.</p>
+            </div>
+            <div class="card blue">
+                <div class="icon">📍</div>
+                <h4 data-i18n="srv2_title">Real-Time GPS Tracking</h4>
+                <p data-i18n="srv2_desc">Complete visibility of your fleet with updates every second and smart geofencing.</p>
+            </div>
+            <div class="card light">
+                <div class="icon">📊</div>
+                <h4 data-i18n="srv3_title">Operational Analytics</h4>
+                <p data-i18n="srv3_desc">Intuitive dashboards with key metrics and AI-based predictions to optimize routes.</p>
+            </div>
+            <div class="card blue">
+                <div class="icon">📦</div>
+                <h4 data-i18n="srv4_title">Inventory Management</h4>
+                <p data-i18n="srv4_desc">Automatic stock control, expiration alerts and storage space optimization.</p>
+            </div>
+            <div class="card light">
+                <div class="icon">🛡️</div>
+                <h4 data-i18n="srv5_title">Smart Replenishment</h4>
+                <p data-i18n="srv5_desc">Anticipate stockouts and generate replenishment recommendations based on demand.</p>
+            </div>
+            <div class="card blue">
+                <div class="icon">⏱️</div>
+                <h4 data-i18n="srv6_title">Loading and Dispatch</h4>
+                <p data-i18n="srv6_desc">Smart algorithms that reduce delivery times and operational costs by up to 30%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="title" data-i18n="how_title">Start optimizing in 4 simple steps</h2>
+        <p class="subtitle" data-i18n="how_subtitle">No technical knowledge required. We guide you through the entire process.</p>
+        
+        <div class="grid steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h4 data-i18n="how1_title">Integrate your operation</h4>
+                <p data-i18n="how1_desc">We connect FreshKargo with your logistics processes and gather key inventory data.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h4 data-i18n="how2_title">Configure inventory</h4>
+                <p data-i18n="how2_desc">Define products, batches, critical levels, and monitoring parameters.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h4 data-i18n="how3_title">Activate monitoring</h4>
+                <p data-i18n="how3_desc">Supervise temperature, stock, traceability, and events in real-time.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">4</div>
+                <h4 data-i18n="how4_title">Optimize decisions</h4>
+                <p data-i18n="how4_desc">Manage departures, replenishment, and analysis from a single place.</p>
+            </div>
+        </div>
+        <div class="center-btn mt-2">
+            <button class="btn-primary" data-i18n="btn_req_demo">Request a Demo &rarr;</button>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2 class="title" data-i18n="prc_title">Plans Designed to Grow With You</h2>
+        <p class="subtitle" data-i18n="prc_subtitle">Choose the plan that best fits your operation</p>
+        
+        <div class="grid pricing-grid">
+            <div class="price-card">
+                <h4 data-i18n="prc_basic">Basic</h4>
+                <p class="desc" data-i18n="prc_basic_desc">For small operations</p>
+                <h2>$299 <span>/mo</span></h2>
+                <ul>
+                    <li data-i18n="prc_f1">✓ Up to 5 units</li>
+                    <li data-i18n="prc_f2">✓ Basic monitoring</li>
+                    <li data-i18n="prc_f3">✓ Temperature control</li>
+                </ul>
+                <button class="btn-outline" data-i18n="btn_start">Get Started</button>
+            </div>
+            <div class="price-card popular">
+                <div class="badge" data-i18n="prc_badge">Most Popular</div>
+                <h4 data-i18n="prc_pro">Professional</h4>
+                <p class="desc" data-i18n="prc_pro_desc">For growing operations</p>
+                <h2>$799 <span>/mo</span></h2>
+                <ul>
+                    <li data-i18n="prc_f4">✓ Up to 25 vehicles</li>
+                    <li data-i18n="prc_f5">✓ Real-time tracking</li>
+                    <li data-i18n="prc_f6">✓ Advanced Analytics + AI</li>
+                </ul>
+                <button class="btn-light" data-i18n="btn_start">Get Started</button>
+            </div>
+            <div class="price-card">
+                <h4 data-i18n="prc_ent">Enterprise</h4>
+                <p class="desc" data-i18n="prc_ent_desc">For large fleets</p>
+                <h2 data-i18n="prc_custom">Custom</h2>
+                <ul>
+                    <li data-i18n="prc_f7">✓ Scalable operation</li>
+                    <li data-i18n="prc_f8">✓ Custom modules</li>
+                    <li data-i18n="prc_f9">✓ SLA guaranteed</li>
+                </ul>
+                <button class="btn-outline" data-i18n="btn_contact">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team bg-light">
+        <h2 class="title" data-i18n="team_title">Our Team</h2>
+        <p class="subtitle" data-i18n="team_subtitle">Meet the team behind FreshKargo</p>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <h4>Felix Becerra</h4>
+                <p>Frontend Developer</p>
+                <div class="team-photo"></div>
+            </div>
+            <div class="team-card">
+                <h4>Rodrigo Velasquez</h4>
+                <p>Frontend Developer</p>
+                <div class="team-photo"></div>
+            </div>
+            <div class="team-card">
+                <h4>Rodrigo Saavedra</h4>
+                <p>Frontend Developer</p>
+                <div class="team-photo"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo-form" class="split-bg-section">
+        <div class="form-container">
+            <h2 class="title" data-i18n="form_title">Book your personalized demo</h2>
+            <p class="subtitle" data-i18n="form_subtitle">No commitment • We respond in minutes</p>
+            
+            <form id="contactForm">
+                <div class="input-group">
+                    <label data-i18n="form_name">Full Name *</label>
+                    <input type="text" placeholder="Your full name" required>
+                </div>
+                <div class="input-group">
+                    <label data-i18n="form_email">Email *</label>
+                    <input type="email" placeholder="you@email.com" required>
+                </div>
+                <div class="input-group">
+                    <label data-i18n="form_phone">Phone / WhatsApp *</label>
+                    <input type="tel" placeholder="999 888 777" required>
+                </div>
+                <button type="submit" class="btn-primary full-width" data-i18n="btn_submit">Book Demo &rarr;</button>
+                <p class="form-note" data-i18n="form_note">Upon submission, you will be redirected to WhatsApp.</p>
+                
+                <div class="form-badges">
+                    <span data-i18n="badge_1">✔️ No Commitment</span>
+                    <span data-i18n="badge_2">✔️ Immediate Response</span>
+                    <span data-i18n="badge_3">✔️ Personalized Support</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+        <div class="cta-content">
+            <div class="cta-icon">📋</div>
+            <h2 data-i18n="cta_title">Does your business still work like this?</h2>
+            <p data-i18n="cta_desc">More than 414,000 warehouses exist in Peru, but only 5% use technology. The rest lose money every day without realizing it: shrinkage, theft, expired products, and zero control.</p>
+            <button class="btn-light mt-2" data-i18n="btn_free_demo">Request Free Demo</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="img/logo.png" alt="FreshKargo Logo">
+                    <span>FreshKargo</span>
+                </div>
+                <p data-i18n="ft_brand_desc">Cutting-edge technology for the intelligent distribution of perishable goods.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="ft_prod">Product</h4>
+                <ul>
+                    <li><a href="#" data-i18n="ft_feat">Features</a></li>
+                    <li><a href="#" data-i18n="ft_int">Integrations</a></li>
+                    <li><a href="#" data-i18n="ft_price">Pricing</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="ft_comp">Company</h4>
+                <ul>
+                    <li><a href="#" data-i18n="ft_about">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" data-i18n="ft_cases">Success Stories</a></li>
+                    <li><a href="#" data-i18n="ft_contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="ft_legal">Legal</h4>
+                <ul>
+                    <li><a href="#" data-i18n="ft_priv">Privacy</a></li>
+                    <li><a href="#" data-i18n="ft_terms">Terms</a></li>
+                    <li><a href="#" data-i18n="ft_sec">Security</a></li>
+                    <li><a href="#" data-i18n="ft_cook">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FreshKargo. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
